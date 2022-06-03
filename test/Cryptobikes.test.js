@@ -149,21 +149,21 @@ contract(
 
     it("the private sale wallet must have the correct balance", async () => {
       const balance = await cryptobikes.balanceOf(privateSale.address);
-      expect(balance.toString()).to.equal("5000000000000000000000000");
+      expect(balance.toString()).to.equal("5750000000000000000000000");
     });
 
     it("the dex liquidity wallet must have the correct balance", async () => {
       const balance = await cryptobikes.balanceOf(dexLiquidity.address);
-      expect(balance.toString()).to.equal("7000000000000000000000000");
+      expect(balance.toString()).to.equal("5750000000000000000000000");
     });
 
     it("the play to earn wallet must have the correct balance", async () => {
       const balance = await cryptobikes.balanceOf(playToEarn.address);
-      expect(balance.toString()).to.equal("53000000000000000000000000");
+      expect(balance.toString()).to.equal("53500000000000000000000000");
     });
 
     it("the wallet must be able to transfer while it has a balance", async () => {
-      const amount = "10000000000000000000";
+      const amount = "100000000000000000000";
 
       const testWallets = [anonymousOne, anonymousTwo, anonymousThree];
 
@@ -177,7 +177,7 @@ contract(
       }
 
       const balance = await cryptobikes.balanceOf(dexLiquidity.address);
-      expect(balance.toString()).to.equal("6999600000000000000000000");
+      expect(balance.toString()).to.equal("5746000000000000000000000");
     });
 
     it("advisor must be able to transfer only the stipulated amount per month", async () => {
@@ -259,7 +259,7 @@ contract(
       });
 
       const balance = await cryptobikes.balanceOf(privateSale.address);
-      expect(balance.toString()).to.equal("3500000000000000000000000");
+      expect(balance.toString()).to.equal("4250000000000000000000000");
     });
 
     it("marked tokens can be transferred to the game", async () => {

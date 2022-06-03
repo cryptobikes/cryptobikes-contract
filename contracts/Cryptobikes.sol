@@ -48,9 +48,9 @@ contract Cryptobikes is ERC20, Pausable, Ownable, ERC20Permit {
         _mint(coreTeam, 12000000 * 10 ** decimals());
         _mint(marketing, 6000000 * 10 ** decimals());
         _mint(development, 9000000 * 10 ** decimals());
-        _mint(privateSale, 5000000 * 10 ** decimals());
-        _mint(dexLiquidity, 7000000 * 10 ** decimals());
-        _mint(playToEarn, 53000000 * 10 ** decimals());
+        _mint(privateSale, 5750000 * 10 ** decimals());
+        _mint(dexLiquidity, 5750000 * 10 ** decimals());
+        _mint(playToEarn, 53500000 * 10 ** decimals());
     }
 
     function pause() public onlyOwner {
